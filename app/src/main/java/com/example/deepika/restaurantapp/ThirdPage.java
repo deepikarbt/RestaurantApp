@@ -1,0 +1,15 @@
+package com.example.deepika.restaurantapp;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+/**
+ * Created by deepika on 12-Aug-16.
+ */
+public class ThirdPage extends Activity {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.third_page);
+    }
+}

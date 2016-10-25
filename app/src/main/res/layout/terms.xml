@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions"
+        android:id="@+id/textView3"
+        android:textSize="30dp"
+        android:paddingTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#2196F3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="italic" />
+<FrameLayout
+    android:layout_width="400dp"
+    android:layout_height="150dp"
+
+    android:layout_below="@+id/textView3"
+    android:layout_alignParentStart="true"
+    android:id="@+id/frameLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Check down the boxes below and read them carefully.By checking the boxes,you acknowledge that you have read and agree to the following terms:"
+        android:id="@+id/textView8"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left|top" />
+</FrameLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/frameLayout"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree to all"
+        android:id="@+id/checkBox"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="55dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I wish to receive customized services"
+        android:id="@+id/checkBox2"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have read and accept the terms"
+        android:id="@+id/checkBox3"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLICK HERE"
+        android:id="@+id/button3"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignEnd="@+id/checkBox2"
+        android:layout_marginTop="73dp" />
+</RelativeLayout>
+
+</RelativeLayout>
